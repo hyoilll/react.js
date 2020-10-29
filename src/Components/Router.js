@@ -9,14 +9,16 @@ class MyRouter extends Component {
     render() {
         return (
             <Router>
-                <Header />
-                <Switch>
-                    <Route path='/' exact component={Home} />
-                    <Route path='/tv' exact component={TV} />
-                    <Route path='/tv/popular' render={() => { return <h1>Popular</h1> }} />
-                    <Route path='/search' exact component={Search} />
-                    <Redirect from="*" to="/" />
-                </Switch>
+                <>
+                    <Header />
+                    <Switch>
+                        <Route path='/' exact component={Home} />
+                        <Route path='/tv' exact component={TV} />
+                        <Route path='/tv/popular' render={() => { return <h1>Popular</h1> }} />
+                        <Route path='/search' exact component={Search} />
+                        <Redirect from="*" to="/" />
+                    </Switch>
+                </>
             </Router>
         )
     }
