@@ -4,6 +4,7 @@ import DetailPresenter from './DetailPresenter';
 
 export default class extends React.Component{
     constructor(props){
+        console.log(props)
         const {location:{pathname}} = props;
         super(props);
         this.state = {
@@ -41,7 +42,6 @@ export default class extends React.Component{
 
     render(){
         const {result, error, loading} = this.state;
-        console.log(result);
         return (
             <DetailPresenter result={result} error={error} loading={loading}/>
             );

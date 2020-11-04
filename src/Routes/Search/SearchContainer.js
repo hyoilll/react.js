@@ -36,7 +36,6 @@ export default class extends React.Component{
 
     updateTerm = (e) => {
         const {target:{value}} = e
-        console.log(value)
 
         this.setState({
             searchTerm:value,
