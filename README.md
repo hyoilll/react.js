@@ -1,8 +1,5 @@
 # Movies
 
-## Screens
+# link
 
-- [] Home
-- [] TV shows
-- [] Search
-- [] Detail
+https://condescending-carson-06480e.netlify.app/#/
